@@ -1,0 +1,28 @@
+# Appveyor API Client Package #
+
+**appveyor** is a simple client package for the [Appveyor](https://ci.appveyor.com/) [REST API](http://www.appveyor.com/docs/api). It can control containerized builds of R packages and other software projects as part of a continuous integration workflow. Unlike most CIs, it is specifically aimed at a Windows development environment.
+
+## Installation ##
+
+[![CRAN](http://www.r-pkg.org/badges/version/appveyor)](http://cran.r-project.org/package=appveyor)
+[![Build Status](https://travis-ci.org/cloudyr/appveyor.png?branch=master)](https://travis-ci.org/cloudyr/appveyor) [![codecov.io](http://codecov.io/github/cloudyr/appveyor/coverage.svg?branch=master)](http://codecov.io/github/cloudyr/appveyor?branch=master)
+
+This package is not yet on CRAN. To install the latest development version from GitHub, run the following:
+
+```R
+if(!require("devtools")){
+    install.packages("devtools")
+    library("devtools")
+}
+install_github("cloudyr/appveyor")
+```
+
+## Code Examples ##
+
+To use the Appveyor API, you will need a Github account and an Appveyor API token, which can be retrieved from https://ci.appveyor.com/api-token. The easiest way to authenticate requests is simply to store this token in the `APPVEYOR_TOKEN` environment variable, for example using: `Sys.setenv("APPVEYOR_TOKEN" = "exampletoken")` or in one's .Renviron file. All functions in the package will then retrieve this environment variable for the purposes of authentication.
+
+More coming soon...
+
+
+---
+[![cloudyr project logo](http://i.imgur.com/JHS98Y7.png)](https://github.com/cloudyr)
