@@ -1,8 +1,8 @@
 Package: appveyor
 Type: Package
 Title: Appveyor CI API Client Package
-Version: 0.1.1
-Date: 2015-09-30
+Version: 0.1.2
+Date: 2015-10-21
 Authors@R: c(person("Thomas J.", "Leeper", role = c("aut", "cre"),
                     email = "thosjleeper@gmail.com"))
 Maintainer: Thomas J. Leeper <thosjleeper@gmail.com>
@@ -11,4 +11,5 @@ License: GPL (>= 2)
 URL: https://github.com/cloudyr/appveyor
 BugReports: https://github.com/cloudyr/appveyor/issues
 Imports: httr
+Enhances: devtools
 Suggests: testthat

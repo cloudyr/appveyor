@@ -1,6 +1,6 @@
 # Appveyor API Client Package #
 
-**appveyor** is a simple client package for the [Appveyor](https://ci.appveyor.com/) [REST API](http://www.appveyor.com/docs/api). It can control containerized builds of R packages and other software projects as part of a continuous integration workflow. Unlike most CIs, it is specifically aimed at a Windows development environment.
+**appveyor** is a simple client package for the [Appveyor](https://ci.appveyor.com/) [REST API](http://www.appveyor.com/docs/api). It can control containerized builds of R packages and other software projects as part of a continuous integration workflow. Unlike most CIs, it is specifically aimed at a Windows development environment. Kirill Müller [offers some documentation](https://github.com/krlmlr/r-appveyor) for how to use Appveyor for R package development, including the specification for an `appveyor.yml` file in your package repository.
 
 ## Installation ##
 
