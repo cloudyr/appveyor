@@ -15,9 +15,10 @@ function(verb = "GET",
          path = "", 
          query = list(),
          body = "",
+         base = "https://ci.appveyor.com/api",
          token = Sys.getenv("APPVEYOR_TOKEN"),
          ...) {
-    url <- paste0("https://ci.appveyor.com/api", path)
+    url <- paste0(base, path)
     h <- httr::add_headers("Authorization" = paste("Bearer", token))
     if (!length(query)) query <- NULL
     if (verb == "GET") {
